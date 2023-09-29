@@ -1,3 +1,6 @@
+import Icon from "./extensions/icon.png";
+import Logo from "./extensions/logo.svg";
+
 export default {
   config: {
     locales: [
@@ -28,8 +31,15 @@ export default {
       // 'zh-Hans',
       // 'zh',
     ],
+    auth: {
+      logo: Logo,
+    },
+    head: {
+      favicon: Icon,
+    },
+    menu: {
+      logo: Icon,
+    },
   },
-  bootstrap(app) {
-    console.log(app);
-  },
+  bootstrap() {},
 };
